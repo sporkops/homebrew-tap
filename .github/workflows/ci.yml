@@ -17,4 +17,4 @@ jobs:
         uses: Homebrew/actions/setup-homebrew@master
 
       - name: Lint spork formula
-        run: brew audit --strict --new spork
+        run: brew audit --strict spork
