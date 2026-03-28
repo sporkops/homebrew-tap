@@ -5,21 +5,21 @@
 class Spork < Formula
   desc "CLI for Ping by Spork — uptime monitoring"
   homepage "https://sporkops.com"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sporkops/cli/releases/download/v0.4.0/spork_darwin_amd64.tar.gz"
-      sha256 "cffb506bb1bda88a97ad7e6d9216012d5a3230902882bcb86dae29619f302865"
+      url "https://github.com/sporkops/cli/releases/download/v0.5.0/spork_darwin_amd64.tar.gz"
+      sha256 "5bc539997b3fcb6b7383aedfc328836b0f2e630a334c74e4c00c8a0cdb44606e"
 
       define_method(:install) do
         bin.install "spork"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sporkops/cli/releases/download/v0.4.0/spork_darwin_arm64.tar.gz"
-      sha256 "5e9ce676ec1e8f12b95d1d12bd58695a81d7a53ad3204dfbf63328535f0a479b"
+      url "https://github.com/sporkops/cli/releases/download/v0.5.0/spork_darwin_arm64.tar.gz"
+      sha256 "02c58ede4a693bfdb10edbf69f34afa52932b4963960a681206cc7876ee1c1d5"
 
       define_method(:install) do
         bin.install "spork"
@@ -29,15 +29,15 @@ class Spork < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sporkops/cli/releases/download/v0.4.0/spork_linux_amd64.tar.gz"
-      sha256 "9dc90118b7dad7ba783a0c84fe877996de7dfe88de6b1233dfc025726ae4ae20"
+      url "https://github.com/sporkops/cli/releases/download/v0.5.0/spork_linux_amd64.tar.gz"
+      sha256 "09f69e0c4dec9ac01aa1ae7ea159db4310cf958d61da68c252d60e485f374b5d"
       define_method(:install) do
         bin.install "spork"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sporkops/cli/releases/download/v0.4.0/spork_linux_arm64.tar.gz"
-      sha256 "374498ea36144c110fac80e9c9d2fa10cfa1bb8c7dbfffacda17ab7f8838d758"
+      url "https://github.com/sporkops/cli/releases/download/v0.5.0/spork_linux_arm64.tar.gz"
+      sha256 "26dda8b5a747992467dfa5a2440f2f5efae123f6251048d14332bb93377349e1"
       define_method(:install) do
         bin.install "spork"
       end
